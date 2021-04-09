@@ -10,6 +10,6 @@ app.use(express.json())
 app.use(routes)
 
 
-app.listen(process.env.SERVER_PORT,()=>{
+app.listen(process.env.SERVER_PORT || 5000,()=>{
     console.log(`App is running on PORT ${process.env.SERVER_PORT}`)
 })
